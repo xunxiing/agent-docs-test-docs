@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "my-thirdparty": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "my-thirdparty",
+      "options": {
+        "baseURL": "http://47.120.52.233:3100/v1",
+        "apiKey": "{env:MY_API_KEY}"
+      },
+      "models": {
+        "glm-4.7": {
+          "name": "glm-4.7"
+        }
+      }
+    }
+  },
+  "model": "my-thirdparty/glm-4.7"
+}
